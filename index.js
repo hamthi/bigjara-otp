@@ -11,7 +11,7 @@ class OTP {
                 for(let i = 0 ; i < length ; i++){
                     OTP += this.numbers[Math.floor(Math.random()*10)]
                 } 
-                return Number(OTP)
+                return String(OTP)
             }
             throw {
                 name : "ArgumentError : The argument provided for the length of the OTP is not a number" , 
